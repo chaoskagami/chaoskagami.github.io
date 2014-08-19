@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Chaoskagami&#39;s homepage : Caffiene-&gt;In Code-&gt;Out" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Chaoskagami&#39;s homepage</title>
+    <title>Chaoskagami&#39;s homepage by chaoskagami</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/chaoskagami">View on GitHub</a>
+    <header>
+      <div class="container">
+        <h1>Chaoskagami&#39;s homepage</h1>
+        <h2>Caffiene-&gt;In Code-&gt;Out</h2>
 
-          <h1 id="project_title">Chaoskagami&#39;s homepage</h1>
-          <h2 id="project_tagline">Caffiene-&gt;In Code-&gt;Out</h2>
+        <section id="downloads">
+          <a href="https://github.com/chaoskagami" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="container">
+      <section id="main_content">
         <p>Welcome to my (<a href="https://github.com/chaoskagami" class="user-mention">@chaoskagami</a>) github homepage. Really, this is just the obligatory about me page.</p>
 
-<p>I love linux - and I use hardened gentoo as my primary os. Yes, and on a laptop. With X. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. My kernel is manually patched - don't expect obvious exploits, script kiddies ;P</p>
+<p>I love linux - and I use hardened gentoo as my primary os. Yes, and on a laptop. With X. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. (Hi NSA!) My kernel is manually patched - don't expect obvious exploits, script kiddies ;P</p>
 
 <p>I love games. You should expect to see at least one game-related project show up in a year.</p>
 
-<p>I love making devices do things they shouldn't or aren't made to do. Like my phone, my ipod touch, my PSP, my hp touchpad, my Wii, etc. etc. They're all at least one of the following: Jailbroken, Rooted, Running a custom ROM, running custom firmware, or running a Linux system on /.</p>
+<p>I love making devices do things they shouldn't or aren't made to do. Like my phone, my ipod touch, my PSP, my hp touchpad, my Wii, etc. etc. They're all at least one of the following: Jailbroken, Rooted, Running a custom ROM, running custom firmware, or running a Linux system on /. I do this for the control I get (like using a PSP as a TV remote, or android on an iTouch, etc), not for illicit things. I like games, I like software, and I'm not a cheap bastard. Just making that clear.</p>
+
+<p>I love coding. Largely, I love to follow silly impulses and do spur of the moment coding projects. So I commonly end up doing ports since they can be done quickly. Some of these will remain in limbo since they're unauthorized, and I'd have to make a tool to supply your own input.</p>
 
 <hr><p>Currently, I'm working on these projects:</p>
 
 <ul>
 <li>
-<a href="http://github.com/chaoskagami/chaos-overlay">Chaos Overlay</a> - My overlay for gentoo. If an ebuild hasn't been updated quick enough, or there's no official ebuild, or another overlay isn't doing their job, and I need it, it'll be in here. Don't use the unstable branch; it's for testing-changing-retesting-changing so I can push to master.</li>
+<a href="http://github.com/chaoskagami/chaos-overlay">Chaos Overlay</a> - My overlay for gentoo. If an ebuild hasn't been updated quick enough, or there's no official ebuild, or another overlay isn't doing their job, and I need it, it'll be in here. Don't use the unstable branch; it's for testing-changing-retesting-changing so I can push to master. This probably won't get commits as often as when I started it, but I will update ebuilds as necessary.</li>
+</ul><p>These are things that have been basically 'completed' and probably will only get bug fixes if I find something terribly wrong with them.</p>
+
+<ul>
 <li>
-<a href="http://github.com/chaoskagami/cm_roth_xml">nVidia Shield Cyanogenmod</a> - I was sitting around, and wondering why this hadn't occurred yet, and why the xda forums were so dead in the shield section. Here's my answer.</li>
+<a href="https://github.com/chaoskagami/FSNConverter-Linux">Fate/Stay Night VNDS Converter (linux)</a> - A direct port of the Fate/Stay Night VNDS converter over at <a href="http://weeaboo.nl/">http://weeaboo.nl/</a>, altered as necessary to run on my native system of choice. Why not just use it in wine? Because java. Java may or may not function in wine, and it's a security flaw as far as I'm concerned to let it anywhere near wine. So nope. The good news; it now works 100% and the source is now GNU C and C++. The bad news; I can't guarantee every edge case works since some of the developers coded things with Windows APIs when they could have used other things. For one example, I had to add typedefs for DWORD, WORD, and LONG. Not only that, but they actually wrote long once. 64-bit linux's long is 64 bits, but they meant an s32. Basically, porting, etc. etc.</li>
+</ul><p>These are on hold for reasons:</p>
+
+<ul>
+<li>
+<a href="http://github.com/chaoskagami/cm_roth_xml">nVidia Shield Cyanogenmod</a> - I was sitting around, and wondering why this hadn't occurred yet, and why the xda forums were so dead in the shield section. Here's my answer. That said, I nuked my system with six cores in favor of a reinstall and 240GB on an SSD is not nearly enough to build a full android, heh.</li>
 <li>
 <a href="https://github.com/chaoskagami/expanel">EXPanel</a>  - A fork of BMPanel, which died in 2008. Likely because the author's readme says on the system tray topic - "Non-standards can die". Well, it's 2014 and that standard is dead, so I'm doing some major core changes - the theme format sucks parameter naming and organization-wise, the documentation is terrible: typing <code>bmpanel --help</code> tells me to read INFO and go through the source, and last but not least, the systray bitrotted. No, I won't stand for this. Time for an update.</li>
 <li>Other stuff that's not terribly important.</li>
@@ -52,14 +61,6 @@
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     
-
   </body>
 </html>
