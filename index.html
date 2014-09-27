@@ -1,49 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Chaoskagami&#39;s homepage : Caffiene-&gt;In Code-&gt;Out">
+    <title>Chaoskagami&#39;s homepage by chaoskagami</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Chaoskagami&#39;s homepage</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/chaoskagami">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/chaoskagami">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">Chaoskagami&#39;s homepage</h1>
-          <h2 id="project_tagline">Caffiene-&gt;In Code-&gt;Out</h2>
+      <section>
+        <div id="title">
+          <h1>Chaoskagami&#39;s homepage</h1>
+          <p>Caffiene-&gt;In Code-&gt;Out</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/chaoskagami">chaoskagami</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <p>Welcome to my (<a href="https://github.com/chaoskagami" class="user-mention">@chaoskagami</a>) github homepage. Really, this is just the obligatory about me page.</p>
 
-<p>I love linux - and I use hardened gentoo as my primary os. Yes, and on a laptop. With X. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. (Hi NSA!) My kernel is manually patched - don't expect obvious exploits, script kiddies ;P</p>
+<p>I love linux - and I use hardened gentoo as my primary os. Yes, and on a laptop. With X. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. (Hi NSA!) My kernel is manually patched - don't expect obvious exploits, script kiddies. ;P</p>
 
 <p>I love games. You should expect to see at least one game-related project show up in a year.</p>
 
 <p>I love making devices do things they shouldn't or aren't made to do. Like my phone, my ipod touch, my PSP, my hp touchpad, my Wii, etc. etc. They're all at least one of the following: Jailbroken, Rooted, Running a custom ROM, running custom firmware, or running a Linux system on /. I do this for the control I get (like using a PSP as a TV remote, or android on an iTouch, etc), not for illicit things. I like games, I like software, and I'm not a cheap bastard. Just making that clear.</p>
 
-<p>I love coding. Largely, I love to follow silly impulses and do spur of the moment coding projects. So I commonly end up doing ports since they can be done quickly. Some of these will remain in limbo since they're unauthorized, and I'd have to make a tool to supply your own input.</p>
+<p>I love coding. Largely, I love to follow silly impulses and do spur of the moment coding projects. So I commonly end up doing ports since they can be done quickly. Some of these will remain in limbo since they're unauthorized, and I'd have to make a tool to supply your own input files. For example - running Analogue: A Hate Story on android. Which I own.</p>
 
-<hr><p>Currently, I'm working on these projects:</p>
+<hr><p>These are miscellaneous things I'm maintaining at this point:</p>
+
+<ul>
+<li>
+<a href="http://github.com/chaoskagami/chaos-overlay">Gentoo Wine SLOTs and Multiple Versions</a> - Inside of my overlay. See, Skyrim (one of my favorite games) - SKSE specifically, doesn't work with my 1.7.26 ebuild. I had to downgrade, but I wasn't satisfied at that. You'll need to stuff app-emulation/wine::chaos, app-admin/eselect-wine::chaos, and virtual/wine into package.unmask, and then emerge virtual/wine. All of the versions installed end up in /usr/lib/wine/{version}. eselect-wine allows for switching the system version used - note that a user version is impossible right now since I would need to make some patches to load from a location other than /usr/share/wine. Currently eselect-wine symlinks that. Therefore, I'll possibly make a new version at some point, and make r1/r2 of all the ebuilds. I <em>may</em> create a secondary overlay with just these on my github, and remove it from chaos.</li>
+</ul><p>Currently, I'm working on these projects:</p>
 
 <ul>
 <li>
 <a href="http://github.com/chaoskagami/chaos-overlay">Chaos Overlay</a> - My overlay for gentoo. If an ebuild hasn't been updated quick enough, or there's no official ebuild, or another overlay isn't doing their job, and I need it, it'll be in here. Don't use the unstable branch; it's for testing-changing-retesting-changing so I can push to master. This probably won't get commits as often as when I started it, but I will update ebuilds as necessary.</li>
 <li>
-<a href="http://github.com/chaoskagami/vndc">VNDC is not a Direct Clone (of VNDS)</a> - A clone of the VNDS interpreter at weaboo. While I love their goal, I don't love the concept of converting a proprietary game to run on another proprietary engine (which is $2.00. Making money off modders is smart, but also dickish.) It just doesn't sit right. So, with the power of open source, SHUT UP AND HAVE A BETTER VERSION. No, seriously. There's more features. If you actually wanted to make a visual novel in VNDC, it would be easier than vnds.</li>
+<a href="http://github.com/chaoskagami/vndc">VNDC is not a Direct Clone (of VNDS)</a> - A clone of the VNDS interpreter at weaboo. While I love their goal, I don't love the concept of converting a proprietary game to run on another proprietary engine (which is $2.00. Making money off modders is smart, but also dickish.) It just doesn't sit right. So, with the power of open source, SHUT UP AND HAVE A BETTER VERSION. No, seriously. There's more features. If you actually wanted to make a visual novel in VNDC, it would be easier than vnds. Also, it's coded entirely from scratch as a reimplementation. Partially to testbed Zero, which is a code layer I'll probably release at some point.</li>
 </ul><p>These are things that have been basically 'completed' and probably will only get bug fixes if I find something terribly wrong with them.</p>
 
 <ul>
@@ -53,25 +66,18 @@
 
 <ul>
 <li>
-<a href="http://github.com/chaoskagami/cm_roth_xml">nVidia Shield Cyanogenmod</a> - I was sitting around, and wondering why this hadn't occurred yet, and why the xda forums were so dead in the shield section. Here's my answer. That said, I nuked my system with six cores in favor of a reinstall and 240GB on an SSD is not nearly enough to build a full android, heh.</li>
+<a href="http://github.com/chaoskagami/cm_roth_xml">nVidia Shield Cyanogenmod</a> - I was sitting around, and wondering why this hadn't occurred yet, and why the xda forums were so dead in the shield section. Here's my answer. That said, I nuked my system with six cores in favor of a reinstall and 240GB on an SSD is not nearly enough to build a full android, heh. As an aside, nvidia's source code will not build into something usable.</li>
 <li>
-<a href="https://github.com/chaoskagami/expanel">EXPanel</a>  - A fork of BMPanel, which died in 2008. Likely because the author's readme says on the system tray topic - "Non-standards can die". Well, it's 2014 and that standard is dead, so I'm doing some major core changes - the theme format sucks parameter naming and organization-wise, the documentation is terrible: typing <code>bmpanel --help</code> tells me to read INFO and go through the source, and last but not least, the systray bitrotted. No, I won't stand for this. Time for an update.</li>
+<a href="https://github.com/chaoskagami/expanel">EXPanel</a>  - A fork of BMPanel, which died in 2008. Likely because the author's readme says on the system tray topic - "Non-standards can die". Well, it's 2014 and that standard is dead, so I'm doing some major core changes - the theme format sucks parameter naming and organization-wise, the documentation is terrible: typing <code>bmpanel --help</code> tells me to read INFO and go through the source, and last but not least, the systray bitrotted. I was coding this really out of boredom one day, so it will probably just rot until I feel like messing with it.</li>
 <li>Other stuff that's not terribly important.</li>
-</ul><hr><p>On the rare offchance you want to donate to me, send some bitcoins to:
+</ul><hr><p>On the rare offchance you want to donate to me, and like what I do, send some bitcoins to:
 15iXSmZLvi1P3Y2kiPhLXBMs9RexkamFVm</p>
 
-<p>I don't use the google analytics feature github provides. Tracking is evil. ;P</p>
+<p>I don't use the google analytics feature github provides. Tracking is evil. Why should I do it? ;P</p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
