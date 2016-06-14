@@ -1,30 +1,49 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Chaoskagami&#39;s homepage by chaoskagami</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Chaoskagami&#39;s homepage</h1>
-      <h2 class="project-tagline">Adventures in base64:UHJvZ3JhbW1pbmcK</h2>
-    </section>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/chaoskagami">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-    <section class="main-content">
-      <p>Welcome to my (<a href="https://github.com/chaoskagami" class="user-mention">@chaoskagami</a>) github homepage. Really, this is just the obligatory about me page.</p>
+    <div class="wrapper">
 
-<p>I love linux - and I use hardened gentoo as my primary os. Yes, and on a laptop. With X. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. (Hi NSA!) My kernel is manually patched - don't expect obvious exploits, script kiddies. ;P</p>
+      <section>
+        <div id="title">
+          <h1>Chaoskagami&#39;s homepage</h1>
+          <p>Adventures in base64:UHJvZ3JhbW1pbmcK</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/chaoskagami">chaoskagami</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-<p>I love games. You should expect to see at least one game-related project show up in a year.</p>
+        <p>Welcome to my (<a href="https://github.com/chaoskagami" class="user-mention">@chaoskagami</a>) github homepage. Really, this is just the obligatory about me page.</p>
 
-<p>I love making devices do things they shouldn't or aren't made to do. Like my phone, my ipod touch, my PSP, my hp touchpad, my Wii, etc. etc. They're all at least one of the following: Jailbroken, Rooted, Running a custom ROM, running custom firmware, or running a Linux system on /. I do this for the control I get (like using a PSP as a TV remote, or android on an iTouch, etc), not for illicit things. I like games, I like software, and I'm not a cheap bastard. Just making that clear.</p>
+<p>I love linux - and I use LFS as a primary os. Yes, and on a laptop. With X. It's also grsecurity based and PIE like hardened gentoo. The higher security margin is something I like to have nowadays, with all of the stuff coming out about privacy and security. (Hi NSA!)</p>
 
-<p>I love coding. Largely, I love to follow silly impulses and do spur of the moment coding projects. So I commonly end up doing ports since they can be done quickly. Some of these will remain in limbo since they're unauthorized, and I'd have to make a tool to supply your own input files. For example - running Analogue: A Hate Story on android. Which I own.</p>
+<p>I love doing RE work and making devices do things they shouldn't.</p>
+
+<p>My phone, my iPod Touch, my PSP, my HP Touchpad, my Wii, my 3DS, etc. are all at least one of the following: Jailbroken, Rooted, Running a custom ROM, running CFW, or running a Linux system on /. I do this for the control I get (like using a PSP as a TV remote, or Android on an iTouch, etc), not for being a cheap bastard. I like games, I like software, and I pay for stuff. Just making that clear.</p>
+
+<p>Largely, I love to follow silly impulses and do spur of the moment coding projects just for fun. So I commonly end up doing ports since they can be done quickly. Some of these will remain in limbo since they're unauthorized, and I'd have to make a tool to supply your own input files. For example - running Analogue: A Hate Story on android. Which I own.</p>
 
 <hr>
 
@@ -32,7 +51,7 @@
 
 <ul>
 <li>
-<a href="https://github.com/chaoskagami/MaihanaTL">Maihana Ao Makyou ~ Uniting Barrage Action Tools</a> - A badass Touhou fangame from the same people who made Croixleur, Souvenir Circle. Unfortunately, not translated. These tools and scripts aim to fix that. Currently, the tools aren't capable of injecting graphics or menu text, sadly.</li>
+<a href="https://github.com/chaoskagami/corbenik">Corbenik</a> - CFW for the 3DS. This was partially born from me wanting something more dynamic than CakesFW, partly just because I needed an excuse to write a VM. Not meant for people who don't know what they're doing or don't understand the concept of a VM. Named for the Eigth Morganna Factor in .hack//. This may well be my first 'serious' project that I'm putting a lot of work into.</li>
 <li>
 <a href="https://github.com/chaoskagami/scangrab">scangrab</a> - Tool for fetching scanlated manga from multiple sites and some generics (foolslide, mainly...) No, I will never implement mangafox. Have fun supporting pirates and reading shitty quality watermarked scans. Due to the fact that there's two NSFW fetching modules (fakku, e-h) I may have to make a SFW branch and make it the default for correctness like youtube-dl.</li>
 </ul>
@@ -58,31 +77,25 @@
 
 <ul>
 <li>
-<a href="http://github.com/chaoskagami/RCOMage">RCOMage fork</a> - Tool for compiling/extracting PSP resource files. See, this tool had some major potential, but then zinga dropped off the earth. A guy ported it to linux, and that was it. Many features left missing (read: how the hell do I convert gim images without windows) lead me to hack on some of the leftovers in the todo. After I finish the gim&lt;-&gt;bmp code and some minor other stuff, I'll move it to the maintainance list.</li>
+<a href="http://github.com/chaoskagami/RCOMage">RCOMage fork</a> - Tool for compiling/extracting PSP resource files. See, this tool had some major potential, but then zinga dropped off the earth. A guy ported it to linux, and that was it. Many features left missing (read: how the hell do I convert gim images without windows) which lead me to hack on some of the leftovers in the todo. After I finish the gim&lt;-&gt;bmp code and some minor other stuff, I'll move it to the maintainance list.</li>
 <li>
 <a href="http://github.com/chaoskagami/cm_roth_xml">nVidia Shield Cyanogenmod</a> - I was sitting around, and wondering why this hadn't occurred yet, and why the xda forums were so dead in the shield section. Here's my answer. That said, I nuked my system with six cores in favor of a reinstall and 240GB on an SSD is not nearly enough to build a full android, heh. As an aside, nvidia's source code will not build into something usable.</li>
 <li>
 <a href="https://github.com/chaoskagami/expanel">EXPanel</a>  - A fork of BMPanel, which died in 2008. Likely because the author's readme says on the system tray topic - "Non-standards can die". Well, it's 2014 and that standard is dead, so I'm doing some major core changes - the theme format sucks parameter naming and organization-wise, the documentation is terrible: typing <code>bmpanel --help</code> tells me to read INFO and go through the source, and last but not least, the systray bitrotted. I was coding this really out of boredom one day, so it will probably just rot until I feel like messing with it.</li>
+<li>
+<a href="https://github.com/chaoskagami/MaihanaTL">Maihana Ao Makyou ~ Uniting Barrage Action Tools</a> - A badass Touhou fangame from the same people who made Croixleur, Souvenir Circle. Unfortunately, not translated. These tools and scripts aim to fix that. Currently, the tools aren't capable of injecting graphics or menu text, sadly.</li>
 <li>Other stuff that's not terribly important.</li>
 </ul>
 
 <hr>
 
-<p>On the rare offchance you want to donate to me, and like what I do, send some bitcoins to:
-12mFyxdbZ17jp4k84g7CL7U1fdzCS3oNdM</p>
-
 <p>My <a href="https://keybase.io/chaoskagami">Keybase.io</a> profile.</p>
 
 <p>I don't use the google analytics feature github provides. Tracking is evil. Why should I do it? ;P</p>
+      </section>
 
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
   </body>
 </html>
-
